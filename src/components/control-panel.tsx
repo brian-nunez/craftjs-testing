@@ -3,6 +3,7 @@ import { useEditor } from "@craftjs/core";
 
 export const ControlPanel = () => {
   const { selected, active } = useEditor((state) => {
+    // @ts-ignore
     const [currentNodeId] = state.events.selected;
     let selected;
 
